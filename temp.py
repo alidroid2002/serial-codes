@@ -2,7 +2,7 @@ import serial, time
 
 try:
     ser = serial.Serial("COM6", 9600, timeout=0.1)
-    print(f"{ser.name} found.")
+    print(f"{ser.name} opened at baud rate: {ser.baudrate}.")
     
     while True:
         line = ser.readline()
