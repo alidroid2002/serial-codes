@@ -7,7 +7,7 @@ root.title("LED control")
 root.iconbitmap("iconArduino.ico")
 
 try:
-    ser = serial.Serial("COM1", 9600, timeout=0.1)
+    ser = serial.Serial("COM6", 9600, timeout=0.1)
 
     myImg = ImageTk.PhotoImage(Image.open('arduino.jpg').resize((640, 360), Image.LANCZOS))
     imgLabel = Label(root, image=myImg).grid(row=0, column=0, columnspan=8)
