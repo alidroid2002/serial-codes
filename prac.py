@@ -1,5 +1,5 @@
 from tkinter import *
-import serial, time
+import serial
 from PIL import ImageTk, Image
 
 root = Tk()
