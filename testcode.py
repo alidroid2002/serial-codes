@@ -1,6 +1,5 @@
 import time, sys
 import serial
-from serial.tools import list_ports
 
 def read_for(ser, seconds=2.0):
     """Read and print any lines available for up to `seconds`."""
